@@ -1,111 +1,231 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="mysite.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script  type="javascript" src="mysite.js"></script>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+        <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+
+        <title>Navraj Khanal</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Navraj</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#Connect" class="nav__link">Connect</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h2 class="home__title">Hi,<br>I'am <span class="home__title-color">Navraj</span><br></h2>
+                        <h3>IT Operations Professional</h3> 
+
+                    <!-- <a href="#" class="button">Contact</a> -->
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/navraj-khanal-011/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/mrneilk" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <a href="https://medium.com/@navrajwrites" class="home__social-icon"><i class='bx bxl-medium' ></i></a>
+                    <a href="https://leetcode.com/u/navrajcode_new/" class="home__social-icon"><img src="https://img.icons8.com/?size=100&id=PZknXs9seWCp&format=png&color=000000" class="leetcode"></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/navraj_copy.JPG"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <figure>
+                            <img src="assets/img/navraj2.png" alt="about image">
+                            <figcaption>AI Re-imagined Image</figcaption>
+                        </figure>
+                        
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Navraj</h2>
+                        <p class="about__text">IT professional with experience in managing IT services, ensuring continuous delivery of IT infrastructure and application services. With a strong background in computer science, I am passionate about DevOps and client service delivery. I thrive in dynamic IT environments and enjoy solving complex problems to drive innovation and efficiency.
+This version enhances readability, corrects grammatical errors, and improves the flow. Let me know if you'd like any further refinements!
+</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">Skills I use in my current job profile.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-server skills__icon'></i>
+                                <span class="skills__name">Infrastructure Management</span>
+                            </div>
+                            <div class="skills__bar skills__ITInfra">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-alert-triangle skills__icon'></i> 
+                                <span class="skills__name">Incident Management</span>
+                            </div>
+                            <div class="skills__bar skills__INCMGMT">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-chart-gantt skills__icon' ></i>
+                                <span class="skills__name">Project Management</span>
+                            </div>
+                            <div class="skills__bar skills__PROMGMT">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">50%</span>
+                                
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-chart-line skills__icon'  ></i> 
+                                <span class="skills__name">Data Analysis and Reports</span>
+                            </div>
+                            <div class="skills__bar skills__STKHLDRMGMT">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <figure> 
+                            <img src="assets/img/IT professional work.png" alt="" class="skills__img">
+                            <figcaption>AI Generated Image</figcaption>
+                        </figure>              
+                       
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Work and other Credentials</h2>
+
+                <div class="work__container bd-grid"> 
+                    <a href="https://www.researchgate.net/publication/368154245_DETECTION_OF_PNEUMONIA_FROM_X-RAY_IMAGES_USING_DEEP_LEARNING" class="work__img">
+                        <!-- <img src="assets/img/work1.jpg" alt=""> -->
+                         <br>&nbsp;&nbsp;
+                         <i class='bx bx-article work__icon'></i>
+                         <i class='bx  bx-analyze work__icon'></i> 
+                         <br>
+                          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Publications</p>
+                    </a>
+                    <a href="https://github.com/mrneilk/NotesJunction" class="work__img">
+                        <img src="assets/img/notes_junction.png" alt="">
+                    </a>
+                    <a href="https://github.com/mrneilk/BlogIt" class="work__img">
+                        <img src="assets/img/blog_it.png" alt="">
+                    </a>
+                    <p class="work__text">
+                       Graduate in CSE from GGSIPU, New Delhi
+                       <img src="https://img.icons8.com/?size=100&id=fFB2YOVLJLmf&format=png&color=000000" alt="">
+                    </p>
+                    <p class="work__text">
+                       Aspirational skills are DevOps, Project and Program management, Client delivery Operations and System Design.
+                       <img src="https://img.icons8.com/?size=100&id=39292&format=png&color=000000" alt="">
+                    </p>
+                    <p class="work__text">
+                       Currently working at <br>
+                        <br>
+                       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Accenture.svg/1920px-Accenture.svg.png" alt="">
+                    </p>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <!-- <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Enviar" class="contact__button button">
+                    </form>
+                </div>
+            </section> -->
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer" id="Connect">
+            <p class="footer__title">Lets Connect</p>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/profile.php?id=61550773979916" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/iamnavrajkhanal/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://x.com/iamnavrajkhanal" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.youtube.com/@ZincaRogi" class="footer__icon"><i class='bx bxl-youtube' ></i></a>
+            </div>
+            <!-- <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p> -->
+            <p>This page is designed with code template available on Public Github <a href="https://github.com/bedimcode/portfolio-responsive-complete">Repository</a>. Special Thanks to the original Designer.</p>
+        </footer>
 
 
-    <title>Navraj Khanal</title>
-  </head>
-  <body>
-    <div class="flex-container">
-      <div class="my_image">
-        <img src="20200216040929_IMG_0393.JPG" alt="myself" class="image_myself">
-        <div class="overlay">
-          <div class="text_on_image">
-            Hey, Thats Me!
-          </div>
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-        </div>
-      </div>
-      <div class="welcome_message">
-        <h1>Hello, and Welcome</h1>
-        <p>My name is Navraj. I am a Computer Science Engineering student.
-          <br>Like to code using C++ and create amazing amazing websites.
-         </p>
-      </div>
-
-    </div>
-    <h2>About My Education</h2>
-    <!-- <div class="">
-      <h2 class="ml1">
-        <span class="text-wrapper">
-        <span class="line line1"></span>
-        <span class="letters">About My Education</span>
-        <span class="line line2"></span>
-        </span>
-      </h2>
-    </div> -->
-
-    <div class="Education">
-
-      <div class="schooling">
-        <p>I did my 12 years of schooling from Veda Vyasa D.A.V. Public School</p>
-        <p>Know more about my School.Visit the website.</p>
-        <button class="button" name="button" ><span> <a href="https://vvdav.org/">VVDAV</a></span> </button>
-      </div>
-      <div class="simage">
-        <img class="school_image" src="Slider_ba68d904-9a02-4e5f-89a0-50ff09a26c61_vvdav.jpg" alt="myschool">
-        <!-- <div class="overlay_s">
-          <div class="text_on_image_s">
-            Thats my school
-          </div> -->
-      </div>
-      <div class="higheredu">
-        <p>Currently pursuing bachelors from Bhagwan Parshuram Institute of Technology</p>
-        <p>Know more about my College.Visit the website.</p>
-        <button class="button" name="button" ><span> <a href="http://www.bpitindia.com/">BPIT</a> </span></button>
-      </div>
-      <div class="collegeimg">
-        <img class="college_image" src="13032_BPIT_New.jpg" alt="mycollege">
-        <!-- <div class="overlay_c">
-          <div class="text_on_image_c">
-            Thats my college
-          </div> -->
-      </div>
-    </div>
-
-  <h2>Skills and Technologies</h2>
-    <div class="skills_technologies">
-
-      <table class="skill_table">
-        <tr>
-          <td> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"> <img id="s1" src="195px-HTML5_logo_and_wordmark.svg.png" alt="HTML5"></a></td>
-          <td> <a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS"><img id="s2" src="CSS3_logo_and_wordmark.svg.png" alt="CSS"></a> </td>
-          <td> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img id="s3" src="js.png" alt="JAVASCRIPT"></a> </td>
-          <td> <a href="https://www.python.org/"><img id="s4" src="python-logo-master-v3-TM-flattened.png" alt="PYTHON"></a> </td>
-          <td> <a href="https://www.djangoproject.com/"><img id="s5" src="django-logo-negative.png" alt="DJNAGO"></a> </td>
-          <td> <a href="https://isocpp.org/"><img id="s6" src="ISO_C++_Logo.svg" alt="C++"></a> </td>
-        </tr>
-      </table>
-
-    </div>
-
-    <div class="my_projects">
-      <h2>Stay tuned for my upcoming projects</h2>
-    </div>
-    <h2>Connect with me@</h2>
-    <div class="connect_with_me">
-      <table class="connect_table">
-        <tr>
-          <td> <a href="https://www.linkedin.com/in/navraj-khanal-011/" class="fa fa-linkedin"></a></td>
-          <td> <a href="#" class="fa fa-instagram"></a> </td>
-          <td> <a href="https://www.youtube.com/channel/UCybdcXYjsLKa85CbY6AEqCA" class="fa fa-youtube"></a> </td>
-
-          <td> <a href="https://github.com/mrneilk" class="fa fa-github"></a> </td>
-          <td> <a href="#" class="fa fa-facebook"></a> </td>
-        </tr>
-      </table>
-    </div>
-  </body>
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
